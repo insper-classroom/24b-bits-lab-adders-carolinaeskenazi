@@ -44,7 +44,7 @@ def test_fullAdder():
             b.next = bool(int(t[1]))
             c.next = bool(int(t[2]))
             yield delay(1)
-            assert soma == a ^ b ^ c
+            assert soma == a^b^c
             assert vaiUm == (a and b) or (a and c) or (c and b)
 
     a = Signal(bool(0))
